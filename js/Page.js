@@ -1,6 +1,6 @@
 import React, {Component} from 'react/addons';
 
-import {SideBar, Entry, Separator, App, Content, TopBar} from 'oc-react-components';
+import {SideBar, Entry, Separator, App, Content, ControlBar} from 'oc-react-components';
 
 export class Page extends Component {
 	state = {
@@ -25,9 +25,9 @@ export class Page extends Component {
 					<Entry icon="user" onClick={this.onClick.bind(this,'user')}>Entry4</Entry>
 				</SideBar>
 
-				<TopBar>
+				<ControlBar>
 					<input type="text" placeholder="foo"/>
-				</TopBar>
+				</ControlBar>
 
 				<Content>
 					<h1>{this.state.page}</h1>
