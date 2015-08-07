@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<info>
+	<id>react_oc_boilerplate</id>
+	<name>React boilerplate</name>
+	<description>Boilerplate for making ownCloud apps using reactjs</description>
+	<licence>AGPL</licence>
+	<author>Robin Appelman</author>
+
+	<dependencies>
+		<owncloud min-version="8.1"/>
+	</dependencies>
+</info>
