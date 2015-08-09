@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "babel-runtime": "^5.8.3",
-    "oc-react-components": "^0.1.1",
+    "oc-react-components": "^0.1.2",
     "react": "^0.13.3"
   }
 }
