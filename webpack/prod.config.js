@@ -36,7 +36,7 @@ module.exports = {
 			{test: /\.json$/, loader: 'json-loader'},
 			{
 				test: /\.css$/,
-				loader: 'style!css?sourceMap!autoprefixer?browsers=last 2 version!'
+				loader: ExtractTextPlugin.extract('style', 'css?sourceMap!autoprefixer?browsers=last 2 version!')
 			}
 		]
 	},
@@ -50,6 +50,7 @@ module.exports = {
 	},
 	plugins: [
 		new CleanPlugin([relativeAssetsPath]),
+		new ExtractTextPlugin("[name].css"),
 		new webpack.DefinePlugin({
 			__CLIENT__: true,
 			__SERVER__: false,
