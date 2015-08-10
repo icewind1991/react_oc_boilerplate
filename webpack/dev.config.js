@@ -5,7 +5,7 @@ var host = 'localhost';
 var port = parseInt(process.env.PORT) + 1 || 3001;
 
 module.exports = {
-	ocRoot: 'http://localhost/owncloud/', // SET THESE TWO
+	ocRoot: 'http://localhost/owncloud/',
 	appId: 'react_oc_boilerplate',
 
 	webPackPort: port,

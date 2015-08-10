@@ -2,12 +2,15 @@
 
 $c = \OC::$server;
 
-\OC::$server->getNavigationManager()->add(function () {
+$appId = 'react_oc_boilerplate';
+$appName = 'React Boilerplate';
+
+\OC::$server->getNavigationManager()->add(function () use ($appId, $appName) {
 	return [
-		'id' => 'react_oc_boilerplate',
+		'id' => $appId,
 		'order' => 22,
-		'name' => 'React Boilerplate',
-		'href' => \OC::$server->getURLGenerator()->linkToRoute('react_oc_boilerplate.page.index'),
-		'icon' => \OC::$server->getURLGenerator()->imagePath('react_oc_boilerplate', 'app.svg')
+		'name' => $appName,
+		'href' => \OC::$server->getURLGenerator()->linkToRoute($appId . '.page.index'),
+		'icon' => \OC::$server->getURLGenerator()->imagePath($appId, 'app.svg')
 	];
 });
