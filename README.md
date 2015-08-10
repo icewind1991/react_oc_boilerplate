@@ -1,6 +1,8 @@
 # React Boilerplate
 
-A basic boilerplate to demonstrate how to build ownCloud apps using reactjs
+A basic boilerplate to demonstrate how to build ownCloud apps using React.
+
+It uses webpack and React HotReload for an improved developer workflow. 
 
 ## Install instructions
 

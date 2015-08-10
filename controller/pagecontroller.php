@@ -42,7 +42,9 @@ class PageController extends Controller {
 		$response = new TemplateResponse(
 			$this->appName,
 			'index',
-			[]
+			[
+				'appId' => $this->appName
+			]
 		);
 
 		return $response;

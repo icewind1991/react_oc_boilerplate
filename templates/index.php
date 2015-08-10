@@ -1,2 +1,2 @@
-<?php script('react_oc_boilerplate', ['../build/main']); ?>
-<?php style('react_oc_boilerplate', ['../build/main']); ?>
+<?php script($_['appId'], ['../build/main']); ?>
+<?php style($_['appId'], ['../build/main']); ?>
