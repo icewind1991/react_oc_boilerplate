@@ -22,6 +22,7 @@
 namespace OCA\React_OC_Boilerplate\Controller;
 
 use OCP\AppFramework\Controller;
+use OCP\AppFramework\Http\ContentSecurityPolicy;
 use OCP\AppFramework\Http\TemplateResponse;
 
 /**

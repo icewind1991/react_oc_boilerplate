@@ -2,13 +2,11 @@
 
 import React from 'react/addons';
 
-import {Page} from './Page.js';
+import {App} from './App.js';
 
-if (process.env.NODE_ENV !== 'production') {
-	// Enable React devtools
-	window.React = React;
-}
+// Enable React devtools
+window.React = React;
 
 $(document).ready(() => {
-	React.render(<Page />, document.getElementById('content'));
+	React.render(<App />, document.getElementById('content'));
 });
