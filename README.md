@@ -12,10 +12,10 @@ It uses webpack and React HotReload for an improved developer workflow.
 
 ## Building an app
 
- - set the app id, name, description, etc in `appinfo/info.xml`
- - set the app id and name in `appinfo/app.php`
- - Set the owncloud web root and app id in `webpack/dev.config.js`
- - Update the namespace in `controller/pagecontroller.php` to match the app id
+ - `npm install`
+ - set the app id and name using `npm run configure`
+ - set the app author, description, etc in `appinfo/info.xml`
+ - Set the owncloud web root  in `webpack/dev.config.js`
  - Rename the app folder to match the app id
  - Enable your new app in ownCloud
  - Run `npm run dev` to automatically compile the source files
