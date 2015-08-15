@@ -19,7 +19,7 @@
  *
  */
 
-namespace OCA\React_OC_Boilerplate\Controller;
+namespace OCA\react_oc_boilerplate\Controller;
 
 use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http\ContentSecurityPolicy;

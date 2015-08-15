@@ -4,7 +4,8 @@
     "lint": "eslint -c .eslintrc js",
     "watch-client": "node ./node_modules/better-npm-run watch-client",
     "proxy": "node ./node_modules/better-npm-run proxy",
-    "dev": "concurrent --kill-others \"npm run watch-client\" \"npm run proxy\""
+    "dev": "concurrent --kill-others \"npm run watch-client\" \"npm run proxy\"",
+    "configure": "node ./configure.js"
   },
   "betterScripts": {
     "build": {
@@ -46,8 +47,10 @@
     "extract-text-webpack-plugin": "^0.8.1",
     "http-proxy": "^1.11.1",
     "json-loader": "0.5.2",
+    "prompt": "^0.2.14",
     "react-a11y": "0.1.1",
     "react-hot-loader": "1.2.7",
+    "replace": "^0.3.0",
     "strip-loader": "^0.1.0",
     "style-loader": "^0.12.3",
     "webpack": "^1.9.11",
