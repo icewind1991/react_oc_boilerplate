@@ -2,7 +2,7 @@ import {Component} from 'react/addons';
 
 import {SideBar, Entry, Separator, App as AppContainer, Content, ControlBar} from 'oc-react-components';
 
-require('../css/app.css');
+import style from '../css/app.css';
 
 export class App extends Component {
 	state = {
@@ -35,7 +35,7 @@ export class App extends Component {
 				</ControlBar>
 
 				<Content>
-					<h1>{this.state.page}</h1>
+					<h1 className={style.header}>{this.state.page}</h1>
 
 					<p>Content...</p>
 				</Content>
