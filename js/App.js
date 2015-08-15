@@ -2,7 +2,7 @@ import {Component} from 'react/addons';
 
 import {SideBar, Entry, Separator, App as AppContainer, Content, ControlBar} from 'oc-react-components';
 
-import style from '../css/app.css';
+import style from '../css/app.less';
 
 export class App extends Component {
 	state = {
