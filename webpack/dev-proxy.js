@@ -25,6 +25,7 @@ proxy.on('proxyRes', function (proxyRes, req, res, options) {
 		var post = 'localhost:' + config.webPackPort + ' ';
 		proxyRes.headers['content-security-policy'] = proxyRes.headers['content-security-policy']
 			.replace('connect-src ', 'connect-src * ')
+			.replace('style-src ', 'style-src * ')
 			.replace('script-src ', 'script-src ' + post);
 	}
 });
