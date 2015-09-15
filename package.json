@@ -61,7 +61,7 @@
   "dependencies": {
     "babel": "5.8.3",
     "babel-plugin-typecheck": "0.0.3",
-    "oc-react-components": "^0.1.5",
+    "oc-react-components": "^0.1.8",
     "react": "^0.13.3"
   }
 }

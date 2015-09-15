@@ -1,6 +1,6 @@
 import {Component} from 'react/addons';
 
-import {SideBar, Entry, Separator, App as AppContainer, Content, ControlBar} from 'oc-react-components';
+import {SideBar, Entry, Separator, App as AppContainer, Content, ControlBar, Settings} from 'oc-react-components';
 
 import style from '../css/app.less';
 
@@ -28,6 +28,12 @@ export class App extends Component {
 						   onClick={this.onClick.bind(this,'folder')}>Entry3</Entry>
 					<Entry key={4} icon="user"
 						   onClick={this.onClick.bind(this,'user')}>Entry4</Entry>
+
+					<Settings>
+						<h2>
+							Foo...
+						</h2>
+					</Settings>
 				</SideBar>
 
 				<ControlBar>
