@@ -1,6 +1,7 @@
 'use strict';
 
-import React from 'react/addons';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 import {App} from './App.js';
 
@@ -8,5 +9,5 @@ import {App} from './App.js';
 window.React = React;
 
 $(document).ready(() => {
-	React.render(<App />, document.getElementById('content'));
+	ReactDOM.render(<App />, document.getElementById('content'));
 });

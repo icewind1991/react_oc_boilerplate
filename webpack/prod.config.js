@@ -31,7 +31,7 @@ module.exports = {
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
-				loaders: [strip.loader('debug'), 'babel?stage=0&optional=runtime&plugins=typecheck']
+				loaders: [strip.loader('debug'), 'babel-loader']
 			},
 			{test: /\.json$/, loader: 'json-loader'},
 			{

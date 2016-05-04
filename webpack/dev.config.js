@@ -34,7 +34,7 @@ module.exports = {
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
-				loaders: ['react-hot', 'babel?stage=0&optional=runtime&plugins=typecheck']
+				loaders: ['react-hot', 'babel-loader']
 			},
 			{test: /\.json$/, loader: 'json-loader'},
 			{
